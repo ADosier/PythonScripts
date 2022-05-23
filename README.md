@@ -8,5 +8,11 @@
       - After manually selecting the top 10 terms from the top 40 terms collected from the previous script this script creates a knowledge base from the other files in the same directory. The knowledge base is a simple dictionary where the keys are the top 10 terms and the values are sentences from one of the several cleaned text files in the directory. What is left is a dictionary of sentences that contain one of the top 10 terms related to the topic so you end up with data pertaining to your topic. 
       - This does not come without its flaws though. The URLs that are scraped could have a lot of irrelevant data since it is just using the links collected off of one starting spot so the end result isn't ideal. This will work much better if the URLs are manually put into the URL file prior to scraping. Alternatively the web crawling could be optimized to prevent bad links from ending up in the web scraping process. As the saying goes garbage in, garbage out.
 
+# YTdownload
+  - Simple youtube downloader to run via command line
+  - It will attempt to download the highest resolution .mp4 stream it finds from the link
+  - you put the script in the folder you want the video to download to and run the command
+    python YTdownload.py URL
+
 # webpTOjpeg
   - This script was just something I made because I found a website that contained a lot of profile pictures that I wanted to use elsewhere. I decided to create my own python script since it looked like a quick and easy way to practice. If you have a lot of .webp images in a directory and run this script directly in the same folder, it will convert all the .webp images into .jpeg
